@@ -1,7 +1,14 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Resume";
 }
-
-<h2>Resume</h2>
-
+<div class="resume-body">
+    <!--PDF link-->
+    <div class="container-fluid text-center link-style">
+        <!--Attach click event to google analytics-->
+        <a href="~/Content/Img/HermiloAcunaResume.pdf" target="_blank" id="resume-click"><h3>Download Resume</h3></a>
+    </div>
+    <!--PDF Display-->
+    <div class="container-fluid" id="pdfviewer">
+        <embed src="~/Content/Img/HermiloAcunaResume.pdf" type="application/pdf" id="pdfviewer" />
+    </div>
+</div>

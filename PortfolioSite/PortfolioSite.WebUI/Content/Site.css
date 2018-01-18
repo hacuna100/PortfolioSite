@@ -1,18 +1,136 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(39,42,56);
+    min-height: 89.4vh;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
+.carousel-inner > .item {
+    -webkit-transition: 0.4s ease-in-out left;
+    -moz-transition: 0.4s ease-in-out left;
+    -o-transition: 0.4s ease-in-out left;
+    transition: 0.4s ease-in-out left;
+}
+
+.circular-img {
+    border-radius: 50%;
+    padding: 15px;
+    max-height: 279px;
+}
+
+.circular-img-error {
+    border-radius: 50%;
+    max-height: 400px;
+}
+
+.navbar {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
 }
 
+.carousel-style {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    max-height: 500px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.resume-body {
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+#about {
+    padding: 15px;
+}
+
+#map {
+    height: 600px;
+    width: 100%;
+}
+
+#pdfviewer {
+    text-align: center;
+    width: 75%;
+    height: 1080px;
+}
+
+.error-img {
+    padding-top: 5%;
+}
+
+
+.contact-style {
+    padding-top: 6%;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.navbar-img {
+    height: auto;
+    width: auto;
+    max-height: 40px;
+    max-width: 250px;
+}
+
+.carousel .item {
+    max-height: 720px;
+}
+
+.item img {
+    vertical-align: central;
+}
+
+.btn-style {
+    margin-left: 2px;
+    margin-right: 2px;
+    color: #fff;
+    background-image: -webkit-linear-gradient(top, #265a88, #337ab7 );
+    background-color: #265a88;
+    border-color: #2e6da4;
+}
+.email-label {
+    color: #fff;
+}
+
+.form-style {
+    width: 100%;
+}
+
+.form-message-style {
+    height: 108px;
+}
+
+.ignore-decor {
+    text-decoration: none!important;
+}
+
+.link-style {
+    text-decoration: underline;
+    padding-bottom: 15px
+}
+
+.vertical-divider-right {
+    border-right: 1px solid gray;
+}
+
+@media (max-width: 768px) {
+    .navbar-img {
+        max-height: 25px;
+    }
+}

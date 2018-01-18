@@ -111,7 +111,17 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Img\heavyBreathingMeme.jpg" />
+    <Content Include="Content\Img\Logo.png" />
+    <Content Include="Content\Img\LogoBlue.png" />
+    <Content Include="Content\Img\LogoWhite.png" />
+    <Content Include="Content\Img\ProfilePic.png" />
+    <Content Include="Content\Img\TestImg1.png" />
+    <Content Include="Content\Img\TestImg2.png" />
+    <Content Include="Content\Img\TestImg3.png" />
+    <Content Include="Content\Img\TestImg4.png" />
     <Content Include="Content\Site.css" />
+    <Content Include="favicon.png" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -130,6 +140,7 @@
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Img\HermiloAcunaResume.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -144,6 +155,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SharedController.cs" />
@@ -174,7 +186,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Img\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

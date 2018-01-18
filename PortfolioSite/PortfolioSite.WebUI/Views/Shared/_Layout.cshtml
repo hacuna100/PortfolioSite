@@ -1,40 +1,32 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <script src="~/Scripts/GoogleTagManger.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" href="~/favicon.png" type="image/x-icon">
+    @Styles.Render("~/Content/css")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                </ul>
-            </div>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNN95KQ"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+            @Html.Action("NavBar", "Shared")
         </div>
-    </div>
-
-    <div class="container body-content">
+    </nav>
+    <div class="container-fluid body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
-
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+    <footer class="container-fluid panel-footer text-center">
+        @Html.Action("Footer", "Shared")
+    </footer>
+    @Scripts.Render("~/Scripts/scripts")
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4juG2ab-DtyAfH_i4n6gx4glweBVFrsM&callback=initMap"></script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107099444-1"></script>
 </body>
 </html>
