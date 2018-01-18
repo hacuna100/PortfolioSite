@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - UI", "1 - UI", "{ABF8A139-0329-483D-8FCD-9A7BED26DF1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Infrastructure", "2 - Infrastructure", "{10266B14-C694-4B09-90A3-64FFEAEBAC99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Service", "3 - Service", "{6A0F8A09-3127-47F6-93BD-60397DC85FBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{8C15ADB1-12E6-4D95-8AC7-E9E3FA44A258}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioSite.WebUI", "PortfolioSite.WebUI\PortfolioSite.WebUI.csproj", "{90754AF7-FA8D-4064-AEA8-0CCAE25D6607}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90754AF7-FA8D-4064-AEA8-0CCAE25D6607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90754AF7-FA8D-4064-AEA8-0CCAE25D6607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90754AF7-FA8D-4064-AEA8-0CCAE25D6607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90754AF7-FA8D-4064-AEA8-0CCAE25D6607}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{90754AF7-FA8D-4064-AEA8-0CCAE25D6607} = {ABF8A139-0329-483D-8FCD-9A7BED26DF1E}
+	EndGlobalSection
+EndGlobal
